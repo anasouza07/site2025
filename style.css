@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,79 +6,74 @@
 
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
+    padding: 20px;
 }
 
 header {
-    background-color: rgb(0, 128, 255); /* Azul RGB */
+    background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-}
-
-.content {
-    margin: 20px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-article {
-    background-color: #fff;
     margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-article h2 {
-    font-size: 1.8rem;
-    color: rgb(255, 87, 34); /* Laranja RGB */
-    margin-bottom: 15px;
+nav ul {
+    list-style-type: none;
 }
 
-article p {
-    font-size: 1.1rem;
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
     margin-bottom: 20px;
-    color: #666;
+    font-size: 1.1em;
 }
 
-.img-responsive {
-    width: 100%;
+ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+.circulo-cromatico {
+    text-align: center;
+}
+
+.circulo-cromatico img {
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-article:nth-child(odd) {
-    background-color: cmyk(0%, 100%, 100%, 0%); /* Amarelo CMYK */
-}
-
-article:nth-child(even) {
-    background-color: cmyk(100%, 50%, 0%, 0%); /* Ciano CMYK */
-}
-
-article:nth-child(odd) h2 {
-    color: cmyk(100%, 0%, 0%, 0%); /* Magenta CMYK */
-}
-
-article:nth-child(even) h2 {
-    color: cmyk(0%, 100%, 100%, 0%); /* Amarelo CMYK */
+    border-radius: 10px;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: rgb(0, 0, 0); /* Preto RGB */
-    color: white;
-}
-
-footer p {
-    font-size: 1rem;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
 }
