@@ -3,57 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelos RGB e CMYK</title>
+    <title>Modelos de Cor RGB e CMYK</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Modelos RGB e CMYK</h1>
-        <nav>
-            <ul>
-                <li><a href="#rgb">Modelo RGB</a></li>
-                <li><a href="#pixel">Funcionamento do Pixel</a></li>
-                <li><a href="#cmyk">Modelo CMYK</a></li>
-                <li><a href="#comparacao">Comparação RGB x CMYK</a></li>
-            </ul>
-        </nav>
+        <h1>Modelos de Cor RGB e CMYK</h1>
     </header>
-    
-    <section id="rgb">
-        <h2>Modelo RGB</h2>
-        <p>O modelo RGB (Red, Green, Blue) é um modelo aditivo de cores, ou seja, as cores são criadas através da combinação de luzes vermelha, verde e azul.</p>
-        <div class="circulo-cromatico">
-            <img src="rgb-circulo.png" alt="Círculo cromático RGB">
-        </div>
-    </section>
 
-    <section id="pixel">
-        <h2>Funcionamento do Pixel no Modelo RGB</h2>
-        <p>O pixel é a menor unidade de uma imagem digital e, no modelo RGB, ele é composto por três subpixels (vermelho, verde e azul). A intensidade de cada cor é combinada para gerar a cor final.</p>
-        <div class="circulo-cromatico">
-            <img src="pixel-rgb.png" alt="Funcionamento do pixel no RGB">
-        </div>
-    </section>
+    <section class="content">
+        <article>
+            <h2>Explicação do modelo RGB</h2>
+            <p>O modelo RGB (Red, Green, Blue) é um sistema aditivo de cores utilizado em dispositivos como monitores e televisores, onde a luz vermelha (R), verde (G) e azul (B) são combinadas em diferentes intensidades para formar diversas cores.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/RGB_color_model.svg/300px-RGB_color_model.svg.png" alt="Modelo RGB" class="img-responsive">
+        </article>
 
-    <section id="cmyk">
-        <h2>Modelo CMYK</h2>
-        <p>O modelo CMYK (Cyan, Magenta, Yellow, Key/Black) é um modelo subtrativo de cores, onde as cores são criadas a partir da combinação de ciano, magenta, amarelo e preto.</p>
-        <div class="circulo-cromatico">
-            <img src="cmyk-circulo.png" alt="Círculo cromático CMYK">
-        </div>
-    </section>
+        <article>
+            <h2>Funcionamento do Pixel no RGB</h2>
+            <p>Em um sistema RGB, cada pixel de uma tela é composto por três sub-pixels: um vermelho, um verde e um azul. A intensidade de cada cor varia de 0 a 255, criando milhões de combinações de cores.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Pixel_RGB_2000.svg/500px-Pixel_RGB_2000.svg.png" alt="Funcionamento do Pixel" class="img-responsive">
+        </article>
 
-    <section id="comparacao">
-        <h2>Comparação: RGB x CMYK</h2>
-        <p>O modelo RGB é utilizado em dispositivos de luz, como monitores e TVs, enquanto o CMYK é utilizado em impressão. A principal diferença é que RGB é aditivo e cria cores com luz, enquanto CMYK é subtrativo e trabalha com pigmentos.</p>
-        <ul>
-            <li><strong>RGB:</strong> Red, Green, Blue (aditivo).</li>
-            <li><strong>CMYK:</strong> Cyan, Magenta, Yellow, Key (subtrativo).</li>
-        </ul>
+        <article>
+            <h2>Explicação do modelo CMYK</h2>
+            <p>O modelo CMYK (Cyan, Magenta, Yellow, Key/Black) é um modelo subtrativo usado principalmente para impressão. Nele, as cores primárias ciano (C), magenta (M) e amarelo (Y) são misturadas para criar outras cores, e o preto (K) é adicionado para proporcionar sombras e profundidade.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/CMYK_500x500.svg/500px-CMYK_500x500.svg.png" alt="Modelo CMYK" class="img-responsive">
+        </article>
+
+        <article>
+            <h2>Comparação RGB x CMYK</h2>
+            <p>Enquanto o RGB é baseado na adição de luz para gerar cores, o CMYK funciona pela subtração de luz, o que é mais adequado para a impressão. RGB é utilizado em telas e CMYK é usado na impressão de materiais gráficos.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/RGB_vs_CMYK.jpg/600px-RGB_vs_CMYK.jpg" alt="Comparação RGB x CMYK" class="img-responsive">
+        </article>
+
+        <article>
+            <h2>Círculo Cromático RGB e CMYK</h2>
+            <p>O círculo cromático ajuda a visualizar a relação entre as cores nos modelos RGB e CMYK. No modelo RGB, as cores se formam a partir da adição de luz, enquanto no modelo CMYK elas se formam pela subtração de luz.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Circle_of_colors_RGB_and_CMYK.svg/500px-Circle_of_colors_RGB_and_CMYK.svg.png" alt="Círculo Cromático RGB e CMYK" class="img-responsive">
+        </article>
     </section>
 
     <footer>
-        <p>Desenvolvido por [Seu Nome].</p>
+        <p>Desenvolvido por [Seu Nome] - 2025</p>
     </footer>
 </body>
 </html>
