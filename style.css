@@ -1,74 +1,85 @@
-/* Resetando estilos padrão */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo do site */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #4CAF50;
+    background-color: rgb(0, 128, 255); /* Azul RGB */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-h1 {
+header h1 {
     font-size: 2.5rem;
+    letter-spacing: 2px;
 }
 
-/* Estilos para o conteúdo */
 .content {
-    max-width: 1200px;
     margin: 20px auto;
-    padding: 0 15px;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 article {
-    margin-bottom: 30px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #333;
+article h2 {
     font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.1rem;
+    color: rgb(255, 87, 34); /* Laranja RGB */
     margin-bottom: 15px;
-    text-align: justify;
 }
 
-/* Imagens responsivas */
+article p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
 .img-responsive {
     width: 100%;
-    max-width: 600px;
     height: auto;
-    margin: 15px 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
-/* Rodapé */
+article:nth-child(odd) {
+    background-color: cmyk(0%, 100%, 100%, 0%); /* Amarelo CMYK */
+}
+
+article:nth-child(even) {
+    background-color: cmyk(100%, 50%, 0%, 0%); /* Ciano CMYK */
+}
+
+article:nth-child(odd) h2 {
+    color: cmyk(100%, 0%, 0%, 0%); /* Magenta CMYK */
+}
+
+article:nth-child(even) h2 {
+    color: cmyk(0%, 100%, 100%, 0%); /* Amarelo CMYK */
+}
+
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: rgb(0, 0, 0); /* Preto RGB */
+    color: white;
+}
+
+footer p {
     font-size: 1rem;
 }
